@@ -39,12 +39,10 @@
     color: black;
     align-items: center;
     width: 100vw;
-    box-shadow: 0 8px 6px -6px black;
     flex-flow: column wrap;
   }
 
   .top-nav img {
-    flex: 1;
     width: 35vw;
     height: 16vh;
   }
@@ -54,7 +52,6 @@
     justify-content: flex-end;
     flex-flow: column wrap;
     background: #398ebc;
-
   }
 
   .nav-links a {
@@ -75,6 +72,7 @@
   left: 0;
   width: 100vw;
   right: 0;
+  box-shadow: 0 8px 6px -6px black;
 }
 
   .footer-column {
@@ -95,7 +93,7 @@
     <a href="#home">
       <img src="/resources/img/svlogo.jpg" alt="" srcset="">
     </a>
-    <a href="" class="menu-bars container">
+    <a href="javascript:void(0)" class="menu-bars container">
       <i class="fa fa-bars container" style="font-size:40px" onclick="showLinks()"></i>
     </a>
   </div>
@@ -128,11 +126,11 @@
   <script>
     function showLinks() {
       let links = document.querySelector(".nav-links")
-      if (links.style.display === "flex") {
-        links.style.display = "none"
-      } else {
-        links.style.display = "flex"
-      }
+     if(links.style.display === "flex"){
+       links.style.display = "none"
+     } else {
+       links.style.display = "flex"
+     }
     }
   </script>
 </body>
