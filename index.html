@@ -35,21 +35,22 @@
 
   .top-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: black;
     align-items: center;
     width: 100vw;
     flex-flow: column wrap;
   }
 
+  /* adicionar media query */
   .top-nav img {
     width: 35vw;
     height: 16vh;
   }
 
+  /* adicionar media query */
   .nav-links {
     display: none;
-    justify-content: flex-end;
     flex-flow: column wrap;
     background: #398ebc;
   }
@@ -58,45 +59,77 @@
     display: block;
     width: 90vw;
     color: white;
-    position: relative;
   }
 
   .menu-bars {
     align-self: flex-end;
   }
 
-.sup-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  left: 0;
-  width: 100vw;
-  right: 0;
-  box-shadow: 0 8px 6px -6px black;
-}
+  .sup-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    left: 0;
+    width: 100vw;
+    right: 0;
+    box-shadow: 0 8px 6px -6px black;
+  }
 
+  .presentation {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+  }
+
+  .presentation img {
+    width: 60vw;
+    height: 30vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .presentation h2 {
+    color: #398ebc;
+    text-align: center;
+  }
+
+  footer {
+    background: #4e4747;
+    color: white
+  }
   .footer-column {
     display: flex;
+    width: 100vw;
     flex-flow: column nowrap;
     list-style: none;
+    justify-content: center;
   }
 
   .footer-column img {
-    width: 30vw;
+    /* margin: 0 auto; */
+    width: 40vw;
     height: 20vh;
+  }
+
+  .bottom-footer {
+    background: #1c375c;
+    color: white;
+    font-weight: bold;
+    text-align: center;
   }
 </style>
 
 <body>
   <div class="top-nav">
     <div class="sup-container">
-    <a href="#home">
-      <img src="/resources/img/svlogo.jpg" alt="" srcset="">
-    </a>
-    <a href="javascript:void(0)" class="menu-bars container">
-      <i class="fa fa-bars container" style="font-size:40px" onclick="showLinks()"></i>
-    </a>
-  </div>
+      <a href="#home">
+        <img src="/resources/img/svlogo.jpg" alt="" srcset="">
+      </a>
+      <a href="javascript:void(0)" class="menu-bars container">
+        <i class="fa fa-bars container" style="font-size:40px" onclick="showLinks()"></i>
+      </a>
+    </div>
     <div class="nav-links container">
       <a class="container" href="#">Home</a>
       <a class="container" href="#">Atendimentos</a>
@@ -105,16 +138,29 @@
     </div>
   </div>
 
+  <div class="presentation">
+    <img class="container" src="/resources/img/logo-removebg-nameless.jpg" alt="">
+    <h2>A nossa clinica</h2>
+    <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h3>
+  </div>
   <!--Area de carousel, com animaçao em card  -->
   <!-- Logo após carousel, "mostrar onde estamos" -->
 
   <!-- agendamento de consulta, faixa com dois botoes, link do whatsapp e botao que aumenta height e mostra telefone e endereço -->
 
-  <!--
+  <div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.3589187947027!2d-46.32204203530973!3d-23.9477450818586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce039eb070c3d5%3A0x9400d3dd4983c451!2sR.%20Campos%20Melo%2C%20157%20-%20Vila%20Matias%2C%20Santos%20-%20SP%2C%2011015-150!5e0!3m2!1spt-BR!2sbr!4v1600780410961!5m2!1spt-BR!2sbr"
+      width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+  </div>
   <footer>
     <div class="footer-column">
-      <img src="/resources/img/svlogo.jpg" alt="" srcset="">
-
+      <img src="/resources/img/svlogo.jpg" class="container" alt="" srcset="">
+      <h2 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's standard dummy text ever since the 1500s</h2>
+      <p class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's standard dummy text ever since the 1500s</p>
     </div>
     <div class="footer-column">
 
@@ -122,15 +168,18 @@
     <div class="footer-column">
 
     </div>
-  </footer> -->
+        <div class="bottom-footer container">
+          <p>It was popularised in the 1960s with the release of Letraset sheets</p>
+        </div>
+  </footer>
   <script>
     function showLinks() {
       let links = document.querySelector(".nav-links")
-     if(links.style.display === "flex"){
-       links.style.display = "none"
-     } else {
-       links.style.display = "flex"
-     }
+      if (links.style.display === "flex") {
+        links.style.display = "none"
+      } else {
+        links.style.display = "flex"
+      }
     }
   </script>
 </body>
