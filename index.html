@@ -27,8 +27,6 @@
   i {
     color: #7ac6da;
     border-radius: 8px;
-
-
   }
 
   .container {
@@ -37,11 +35,12 @@
 
   .top-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: black;
     align-items: center;
     width: 100vw;
     box-shadow: 0 8px 6px -6px black;
+    flex-flow: column wrap;
   }
 
   .top-nav img {
@@ -54,16 +53,29 @@
     display: none;
     justify-content: flex-end;
     flex-flow: column wrap;
+    background: #398ebc;
+
   }
 
   .nav-links a {
     display: block;
+    width: 90vw;
+    color: white;
+    position: relative;
   }
 
   .menu-bars {
     align-self: flex-end;
   }
 
+.sup-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  left: 0;
+  width: 100vw;
+  right: 0;
+}
 
   .footer-column {
     display: flex;
@@ -79,18 +91,20 @@
 
 <body>
   <div class="top-nav">
+    <div class="sup-container">
     <a href="#home">
       <img src="/resources/img/svlogo.jpg" alt="" srcset="">
     </a>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Atendimentos</a>
-      <a href="#">Localizaçao</a>
-      <a href="#">Fale conosco</a>
-    </div>
     <a href="" class="menu-bars container">
-      <i class="fa fa-bars" style="font-size:40px" onclick="showLinks()"></i>
+      <i class="fa fa-bars container" style="font-size:40px" onclick="showLinks()"></i>
     </a>
+  </div>
+    <div class="nav-links container">
+      <a class="container" href="#">Home</a>
+      <a class="container" href="#">Atendimentos</a>
+      <a class="container" href="#">Localizaçao</a>
+      <a class="container" href="#">Fale conosco</a>
+    </div>
   </div>
 
   <!--Area de carousel, com animaçao em card  -->
@@ -114,7 +128,7 @@
   <script>
     function showLinks() {
       let links = document.querySelector(".nav-links")
-      if (links.style.display === "block") {
+      if (links.style.display === "flex") {
         links.style.display = "none"
       } else {
         links.style.display = "flex"
