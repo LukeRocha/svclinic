@@ -9,6 +9,8 @@
   <link rel="icon" href="/resources/img/svico2.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 <style>
   * {
@@ -166,8 +168,9 @@
         <h2>Odonto SV <br> Fale conosco:</h2>
         <h3>(13) 09870970 Whatsapp</h3>
         <h3>oblablue@gluoupa.atk</h3>
-    </div>
-      <h3 class="container">Atendemos com ética e boa implementaçao, para trazer ao paciente confiança e comodidade em seu tratamento</h3>
+      </div>
+      <h3 class="container">Atendemos com ética e boa implementaçao, para trazer ao paciente confiança e comodidade em
+        seu tratamento</h3>
     </div>
     <div class="footer-column container">
       <h2>Horário de atendimento:</h2>
@@ -178,6 +181,11 @@
       <p>CLinica Odonto SV© 2020 - todos os direitos reservados</p>
     </div>
   </footer>
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script>
     function showLinks() {
       let links = document.querySelector(".nav-links")
@@ -187,6 +195,15 @@
         links.style.display = "flex"
       }
     }
+
+
+    $('.one-time').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true
+    });
   </script>
 </body>
 
