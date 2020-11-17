@@ -9,8 +9,8 @@
   <link rel="icon" href="/resources/img/svico2.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="/resources/slick/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="/resources/slick/slick/slick-theme.css" />
 </head>
 <style>
   * {
@@ -81,6 +81,7 @@
     display: flex;
     flex-flow: column wrap;
     width: 100vw;
+    color: #398ebc;
   }
 
   .presentation img {
@@ -92,8 +93,57 @@
   }
 
   .presentation h2 {
-    color: #398ebc;
+    color: black;
     text-align: center;
+    font-weight: bold;
+  }
+
+  .care-area {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    background: #3498db;
+    width: 100vw;
+  }
+
+  .care-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+
+  .inner-card {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .front-card {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    backface-visibility: hidden;
+  }
+
+  .care-card:hover .inner-card {
+    transform: rotateY(180deg);
+  }
+
+  .blue {
+    background: #3498db;
+  }
+
+  .black {
+    background: #4e4747;
+  }
+
+  .carousel-area {
+    max-width: 70vw;
   }
 
   footer {
@@ -144,14 +194,61 @@
   <div class="presentation">
     <img class="container" src="/resources/img/logo-removebg-nameless.jpg" alt="">
     <h2>A nossa clinica</h2>
-    <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-      scrambled it to make a type specimen book.</h3>
+    <h3 class="container">Nós, da SV Odonto, prestamos o melhor atendimento, agimos de acordo com as normas padronizadas
+      pelo conselho de odontologia, e temos o compromisso com o melhor atendimento que voce pode encontrar, conheça os
+      nossos serviços.</h3>
   </div>
+
   <!--Area de carousel, com animaçao em card  -->
+  <div class="care-area container">
+    <h2>Atendimentos</h2>
+    <div class="one-time carousel-area">
+      <div class="care-card blue">
+        <div class="inner-card">
+          <div class="front-card">
+            <h2>Ortodontia</h2>
+          </div>
+          <div class="back-card">
+            <h3>Ortodontia é uma especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares
+              posicionados de forma inadequada.</h3>
+          </div>
+        </div>
+      </div>
+      <div class="expertise-card black">
+
+      </div>
+      <div class="expertise-card blue">
+
+      </div>
+      <div class="expertise-card black">
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
   <!-- Logo após carousel, "mostrar onde estamos" -->
 
   <!-- agendamento de consulta, faixa com dois botoes, link do whatsapp e botao que aumenta height e mostra telefone e endereço -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <div>
     <iframe
@@ -185,7 +282,7 @@
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="/resources/slick/slick/slick.min.js"></script>
   <script>
     function showLinks() {
       let links = document.querySelector(".nav-links")
@@ -202,7 +299,8 @@
       infinite: true,
       speed: 300,
       slidesToShow: 1,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      arrows: false
     });
   </script>
 </body>
