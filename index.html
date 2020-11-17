@@ -104,26 +104,28 @@
     text-align: center;
     background: #3498db;
     width: 100vw;
+    color: white;
   }
 
   .care-card {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 100vw;
+    height: 20vh;
     border: 1px solid #f1f1f1;
-    perspective: 1000px;
+    perspective: 500px;
   }
 
   .inner-card {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 90vw;
+    height: 90vh;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
 
-  .front-card {
+  .front-card,
+  .back-card {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -131,6 +133,18 @@
   }
 
   .care-card:hover .inner-card {
+    transform: rotateY(180deg);
+  }
+
+  .front-card {
+    text-align: center;
+    color: white;
+  }
+
+  /* Style the back side */
+  .back-card {
+    text-align: center;
+    color: white;
     transform: rotateY(180deg);
   }
 
@@ -200,56 +214,61 @@
   </div>
 
   <!--Area de carousel, com animaçao em card  -->
-  <div class="care-area container">
-    <h2>Atendimentos</h2>
-    <div class="one-time carousel-area">
-      <div class="care-card blue">
-        <div class="inner-card">
-          <div class="front-card">
+  <div class="care-area">
+    <h2 class="container">Atendimentos</h2>
+    <div class="multiple-items carousel-area">
+
+      <div class="care-card  container black">
+        <div class="inner-card container">
+          <div class="front-card container">
             <h2>Ortodontia</h2>
           </div>
-          <div class="back-card">
+          <div class="back-card container">
             <h3>Ortodontia é uma especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares
               posicionados de forma inadequada.</h3>
           </div>
         </div>
       </div>
-      <div class="expertise-card black">
 
+      <div class="care-card  container blue">
+        <div class="inner-card container">
+          <div class="front-card container">
+            <h2>Ortodontia</h2>
+          </div>
+          <div class="back-card container">
+            <h3>Ortodontia é uma especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares
+              posicionados de forma inadequada.</h3>
+          </div>
+        </div>
       </div>
-      <div class="expertise-card blue">
 
+      <div class="care-card  container black">
+        <div class="inner-card container">
+          <div class="front-card container">
+            <h2>Ortodontia</h2>
+          </div>
+          <div class="back-card container">
+            <h3>Ortodontia é uma especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares
+              posicionados de forma inadequada.</h3>
+          </div>
+        </div>
       </div>
-      <div class="expertise-card black">
 
+      <div class="care-card  container blue">
+        <div class="inner-card container">
+          <div class="front-card container">
+            <h2>Ortodontia</h2>
+          </div>
+          <div class="back-card container">
+            <h3>Ortodontia é uma especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares
+              posicionados de forma inadequada.</h3>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
   <!-- Logo após carousel, "mostrar onde estamos" -->
-
   <!-- agendamento de consulta, faixa com dois botoes, link do whatsapp e botao que aumenta height e mostra telefone e endereço -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.3589187947027!2d-46.32204203530973!3d-23.9477450818586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce039eb070c3d5%3A0x9400d3dd4983c451!2sR.%20Campos%20Melo%2C%20157%20-%20Vila%20Matias%2C%20Santos%20-%20SP%2C%2011015-150!5e0!3m2!1spt-BR!2sbr!4v1600780410961!5m2!1spt-BR!2sbr"
@@ -293,14 +312,12 @@
       }
     }
 
-
-    $('.one-time').slick({
+    $('.multiple-items').slick({
       dots: true,
       infinite: true,
-      speed: 300,
       slidesToShow: 1,
-      adaptiveHeight: true,
-      arrows: false
+      slidesToScroll: 1,
+      arrows: false,
     });
   </script>
 </body>
