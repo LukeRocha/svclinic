@@ -48,6 +48,16 @@
     height: 16vh;
   }
 
+  .sup-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    left: 0;
+    width: 100vw;
+    right: 0;
+    box-shadow: 0 8px 6px -6px black;
+  }
+
   /* adicionar media query */
   .nav-links {
     display: none;
@@ -63,16 +73,6 @@
 
   .menu-bars {
     align-self: flex-end;
-  }
-
-  .sup-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    left: 0;
-    width: 100vw;
-    right: 0;
-    box-shadow: 0 8px 6px -6px black;
   }
 
   .presentation {
@@ -98,9 +98,10 @@
     background: #4e4747;
     color: white
   }
+
   .footer-column {
     display: flex;
-    width: 100vw;
+    width: 98vw;
     flex-flow: column nowrap;
     list-style: none;
     justify-content: center;
@@ -116,7 +117,7 @@
     background: #1c375c;
     color: white;
     font-weight: bold;
-    text-align: center;
+    text-align: start;
   }
 </style>
 
@@ -141,7 +142,9 @@
   <div class="presentation">
     <img class="container" src="/resources/img/logo-removebg-nameless.jpg" alt="">
     <h2>A nossa clinica</h2>
-    <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h3>
+    <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book.</h3>
   </div>
   <!--Area de carousel, com animaçao em card  -->
   <!-- Logo após carousel, "mostrar onde estamos" -->
@@ -156,21 +159,24 @@
   </div>
   <footer>
     <div class="footer-column">
-      <img src="/resources/img/svlogo.jpg" class="container" alt="" srcset="">
-      <h2 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's standard dummy text ever since the 1500s</h2>
-      <p class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's standard dummy text ever since the 1500s</p>
+      <div class="container">
+        <img src="/resources/img/svlogo.jpg" class="container" alt="" srcset="">
+      </div>
+      <div class="container">
+        <h2>Odonto SV <br> Fale conosco:</h2>
+        <h3>(13) 09870970 Whatsapp</h3>
+        <h3>oblablue@gluoupa.atk</h3>
     </div>
-    <div class="footer-column">
-
+      <h3 class="container">Atendemos com ética e boa implementaçao, para trazer ao paciente confiança e comodidade em seu tratamento</h3>
     </div>
-    <div class="footer-column">
-
+    <div class="footer-column container">
+      <h2>Horário de atendimento:</h2>
+      <h3>De segunda a sexta esporro na escola: <br>das 09:00 às 19:00</h3>
+      <h3>Empinar pipa e jogar bola: <br>Sabado e domingo, 16:00</h3>
     </div>
-        <div class="bottom-footer container">
-          <p>It was popularised in the 1960s with the release of Letraset sheets</p>
-        </div>
+    <div class="bottom-footer container">
+      <p>CLinica Odonto SV© 2020 - todos os direitos reservados</p>
+    </div>
   </footer>
   <script>
     function showLinks() {
