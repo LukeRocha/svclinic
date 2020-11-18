@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,7 +101,7 @@
 
   .care-area {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     text-align: center;
     background: #3498db;
     width: 100vw;
@@ -109,34 +110,31 @@
 
   .care-card {
     background-color: transparent;
-    width: 100vw;
+    max-width: 96vw;
     height: 20vh;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
+    text-align: center;
   }
 
   .inner-card {
-    position: relative;
-    width: 90vw;
-    height: 90vh;
-    text-align: center;
-    transition: transform 0.8s;
+    position: absolute;
+    width: 88vw;
+    transition: transform 0.7s;
     transform-style: preserve-3d;
+    padding: 5px;
   }
 
   .front-card,
   .back-card {
     position: absolute;
-    width: 80vw;
-    height: 80vh;
+    width: 85vw;
     backface-visibility: hidden;
-    text-align: center;
-    display: flex;
-    align-content: center;
   }
 
   .front-card h2 {
     margin: 0 auto;
+    font-size: 2em;
   }
 
   .care-card:hover .inner-card {
@@ -163,10 +161,6 @@
     background: #4e4747;
   }
 
-  .carousel-area {
-    width: 100vw;
-  }
-
   footer {
     background: #4e4747;
     color: white
@@ -191,6 +185,15 @@
     color: white;
     font-weight: bold;
     text-align: start;
+  }
+
+  .test {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
   }
 </style>
 
@@ -221,41 +224,45 @@
   </div>
 
   <!--Area de carousel, com animaçao em card  -->
-  <div class="care-area container">
+  <div class="care-area">
     <h2 class="container">Atendimentos</h2>
-    <div class="multiple-items carousel-area">
-      <div class="care-card black container">
-        <div class="inner-card container">
-          <div class="front-card">
-            <h2>Ortodontia</h2>
-          </div>
-          <div class="back-card">
-            <h3>Ortodontia é uma especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares
-              posicionados de forma inadequada.</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="care-card blue container">
-        <div class="inner-card container">
-          <div class="front-card">
-            <h2>Ortodontia</h2>
-          </div>
-          <div class="back-card">
-            <h3>Ortodontia é uma especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares
-              posicionados de forma inadequada.</h3>
+    <div class="responsive container carousel-area">
+      <div class="container test">
+        <div class="care-card black">
+          <div class="inner-card">
+            <div class="front-card">
+              <h2>Ortodontia</h2>
+            </div>
+            <div class="back-card">
+              <h3>Ortodontia é uma especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares
+                posicionados de forma inadequada.</h3>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="care-card black container">
-        <div class="inner-card c">
-          <div class="front-card container">
-            <h2>Ortodontia</h2>
+      <div class="container">
+        <div class="care-card blue">
+          <div class="inner-card">
+            <div class="front-card">
+              <h2>Ortodontia</h2>
+            </div>
+            <div class="back-card">
+              <h3>Ortodontia é uma especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares
+                posicionados de forma inadequada.</h3>
+            </div>
           </div>
-          <div class="back-card">
-            <h3>Ortodontia é uma especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares
-              posicionados de forma inadequada.</h3>
+        </div>
+      </div>
+      <div class="container">
+        <div class="care-card black">
+          <div class="inner-card">
+            <div class="front-card">
+              <h2>Ortodontia</h2>
+            </div>
+            <div class="back-card">
+              <h3>Ortodontia é uma especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares
+                posicionados de forma inadequada.</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -288,7 +295,7 @@
       <h3>Empinar pipa e jogar bola: <br>Sabado e domingo, 16:00</h3>
     </div>
     <div class="bottom-footer container">
-      <p>CLinica Odonto SV© 2020 - todos os direitos reservados</p>
+      <p>Clinica Odonto SV© 2020 - todos os direitos reservados</p>
     </div>
   </footer>
 
@@ -312,6 +319,42 @@
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
+    });
+
+    $('.responsive').slick({
+      dots: true,
+      infinite: false,
+      arrows: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 3,
+      responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
   </script>
 </body>
