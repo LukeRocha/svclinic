@@ -95,11 +95,19 @@
   .dropdown:hover .dropdown-button {
     background-color: #555;
     color: white;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   .dropdown-content a:hover {
     background-color: #ddd;
     color: black;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .dropdown:hover .dropdown-content {
@@ -137,13 +145,15 @@
     display: flex;
     flex-flow: column wrap;
     width: 100vw;
-    color: #398ebc;
+    color: #1c375c;
+    background: url(/resources/img/clinic.jpg);
+    background-position: top;
   }
 
   .presentation img {
     width: 60vw;
     height: 30vh;
-    border-radius: 50%;
+    border-radius: 36px;
     overflow: hidden;
     margin: 0 auto;
   }
@@ -165,11 +175,11 @@
   }
 
   .care input {
-    width: 50vw;
+    width: 60vw;
     margin: 0 auto;
     background: #3498db;
     color: white;
-    border-radius: 20px;
+    border-radius: 16px;
   }
 
   .care ul {
@@ -186,18 +196,25 @@
     background-color: #3498db;
     width: 100vw;
     color: white;
+    font-size: 1.4em;
   }
 
   .contact-area a {
+    color: white;
+  }
+
+  .call-us {
+    margin: 0 auto;
     background: #1c375c;
     color: white;
     border-radius: 16px;
-    width: 50vw;
+    width: 60vw;
+    /* font-size: 1.6em; */
   }
 
   .map {
-    background: #1c375c;
-    color: white;
+    background: white;
+    color: #1c375c;
     font-size: 1.8em;
     text-align: center;
     width: 100vw;
@@ -256,9 +273,10 @@
           <i class="fa fa-caret-down"></i>
         </a>
         <div class="dropdown-content">
+          <a href="#">Ortodontia</a>
           <a href="#">Periodontia</a>
-          <a href="#">Implante</a>
-          <a href="#">Endodontia</a>
+          <a href="#">Implantodontia</a>
+          <a href="#">Clinica geral</a>
         </div>
       </div>
       <a class="container" href="#">Localizaçao</a>
@@ -267,7 +285,7 @@
   </div>
 
   <div class="presentation">
-    <img class="container" src="/resources/img/logo-removebg-nameless.jpg" alt="">
+    <img class="container" src="/resources/img/dente.jpg" alt="">
     <h2>A nossa clinica</h2>
     <h3 class="container">Nós, da SV Odonto, prestamos o melhor atendimento, agimos de acordo com as normas padronizadas
       pelo conselho de odontologia, e temos o compromisso com o melhor atendimento que voce pode encontrar, conheça os
@@ -275,6 +293,7 @@
   </div>
   <div class="care container">
     <h2>Nossas especialidades</h2>
+    <h3>confira nossos atendimentos principais e clique no botao para saber mais!</h3>
     <ul class="container">
       <li>Ortodontia ✔</li>
       <li>Periodontia ✔</li>
@@ -286,10 +305,13 @@
   <div class="contact-area container">
     <h1 class="container">Marque uma avaliaçao conosco</h1>
     <div>
-      <a class="container" href="https://api.whatsapp.com/send?phone=+5513974050881" target="_blank">Fale conosco 📞</a>
-      <h3>(13) 09870970 - Whatsapp</h3>
-      <h3>oblablue@gluoupa.atk</h3>
-      <h3>Atendemos de segunda a sexta <br> das 09:00 ás 19:00</h3>
+      <div class="container call-us">
+        <a class="container" href="https://api.whatsapp.com/send?phone=+5513974050881" target="_blank">(13) 09870970
+          ✆</a>
+      </div>
+      <!-- <h3 class="container">(13) 09870970 - Whatsapp</h3> -->
+      <h3 class="container">oblablue@gluoupa.atk</h3>
+      <h3 class="container">Atendemos de segunda a sexta <br> das 09:00 ás 19:00</h3>
     </div>
   </div>
   <div class="map container">
