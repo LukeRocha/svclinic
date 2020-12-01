@@ -7,21 +7,11 @@
   <title>Tratamentos</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/resources/css/style.css">
+  <link rel="stylesheet" href="/resources/css/care.css">
   <link rel="icon" href="/resources/img/svico2.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
 </head>
-<style>
-  .care-index {
-    background: #1c375c;
-    color: white;
-  }
-
-  .blocked {
-    display: none
-  }
-</style>
-
 <body>
   <div class="top-nav">
     <div class="sup-container">
@@ -63,19 +53,19 @@
     <div class="care-items">
       <div>
         <h2 class="care-item container" onclick="showItem()">Ortodontia</h2>
-        <h3 class="blocked">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</h3>
+        <h3 class="hidden">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</h3>
       </div>
       <div>
         <h2 class="care-item container" onclick="showItem()">Periodontia</h2>
-        <h3 class="blocked">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</h3>
+        <h3 class="hidden">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</h3>
       </div>
       <div>
         <h2 class="care-item container" onclick="showItem()">Implantes</h2>
-        <h3 class="blocked">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</h3>
+        <h3 class="hidden">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</h3>
       </div>
       <div>
         <h2 class="care-item container" onclick="showItem()">Clinica</h2>
-        <h3 class="blocked">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</h3>
+        <h3 class="hidden">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</h3>
       </div>
     </div>
   </div>
@@ -117,10 +107,7 @@
 
     function showItem(careItem) {
       let careItem = document.querySelector(".blocked")
-      if(careItem.style.display === "none"){
-      careItem.style = "display: block"
-    } else {
-      careItem.style =  "display: none"
+      querySelector('.blocked').remove
     }
 
 

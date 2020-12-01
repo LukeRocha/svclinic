@@ -1,0 +1,12 @@
+.care-index {
+  background: #1c375c;
+  color: white;
+}
+
+.hidden {
+  display: none
+}
+
+.active {
+  display: flex;
+}
