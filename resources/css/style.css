@@ -238,3 +238,27 @@ footer h2 {
 .bottom-footer p {
   border-bottom: white solid 1px;
 }
+
+
+
+
+
+
+/* Area de atendimentos */
+
+.care-index {
+  background: #1c375c;
+  color: white;
+}
+.care-index h2 {
+  color: #3498db
+}
+
+.top-nav {
+  background: white;
+}
+
+.carousel {
+  border-top: 3px solid #3498db;
+  border-bottom: 3px solid #3498db;
+}

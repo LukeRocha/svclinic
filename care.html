@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tratamentos</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="/resources/css/style.css">
-  <link rel="stylesheet" href="/resources/css/care.css">
+  <link rel="stylesheet" type="text/css" href="/resources/slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="/resources/slick-1.8.1/slick/slick-theme.css" />
   <link rel="icon" href="/resources/img/svico2.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
@@ -45,7 +44,6 @@
   </div>
 
 
-  <div class="carousel"> </div>
   <div class="care-index container">
     <div class="container">
       <h1>
@@ -55,28 +53,33 @@
         Atendimento de qualidade por uma equipe focada na excelencia
       </h3>
     </div>
-    <div class="care-items carousel-area">
-      <div>
-        <h2 class="care-item container">Ortodontia</h2>
-        <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-          has been the industry's standard</h3>
+
+    <div class="single-item carousel container">
+        <div>
+          <h2 class="care-item container">Ortodontia</h2>
+          <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard</h3>
+        </div>
+
+        <div>
+          <h2 class="care-item container">Periodontia</h2>
+          <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard</h3>
+        </div>
+
+        <div>
+          <h2 class="care-item container">Implantes</h2>
+          <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard</h3>
+        </div>
+
+        <div>
+          <h2 class="care-item container">Clinica</h2>
+          <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard</h3>
+        </div>
+
       </div>
-      <div>
-        <h2 class="care-item container">Periodontia</h2>
-        <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-          has been the industry's standard</h3>
-      </div>
-      <div>
-        <h2 class="care-item container">Implantes</h2>
-        <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-          has been the industry's standard</h3>
-      </div>
-      <div>
-        <h2 class="care-item container">Clinica</h2>
-        <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-          has been the industry's standard</h3>
-      </div>
-    </div>
   </div>
 
 
@@ -103,6 +106,7 @@
       <p>©Odonto SV 2020 - todos os direitos reservados</p>
     </div>
   </footer>
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -115,6 +119,9 @@
         links.style.display = "flex"
       }
     }
+
+
+    $('.single-item').slick();
   </script>
 </body>
 
