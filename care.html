@@ -7,11 +7,11 @@
   <title>Tratamentos</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/resources/css/style.css">
-  <link rel="stylesheet" type="text/css" href="/resources/slick-1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="/resources/slick-1.8.1/slick/slick-theme.css" />
   <link rel="icon" href="/resources/img/svico2.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -54,32 +54,36 @@
       </h3>
     </div>
 
-    <div class="single-item carousel container">
-        <div>
-          <h2 class="care-item container">Ortodontia</h2>
-          <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard</h3>
-        </div>
-
-        <div>
-          <h2 class="care-item container">Periodontia</h2>
-          <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard</h3>
-        </div>
-
-        <div>
-          <h2 class="care-item container">Implantes</h2>
-          <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard</h3>
-        </div>
-
-        <div>
-          <h2 class="care-item container">Clinica</h2>
-          <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard</h3>
-        </div>
-
+    <div class="multiple-itens carousel container">
+      <div class="container carousel-item">
+        <h2 class="carousel-item container">Ortodontia</h2>
+        <img src="/resources/img/orto.jpg" alt="" srcset="">
+        <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's standard</h3>
       </div>
+
+      <div class="container carousel-item">
+        <h2 class="care-item container">Periodontia</h2>
+        <img src="/resources/img/gengiva.jpg" alt="" srcset="">
+        <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's standard</h3>
+      </div>
+
+      <div class="container carousel-item">
+        <h2 class="care-item container">Implantes</h2>
+        <img src="/resources/img/implante.jpg" alt="" srcset="">
+        <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's standard</h3>
+      </div>
+
+      <div class="container carousel-item">
+        <h2 class="care-item container">Clinica</h2>
+        <img src="/resources/img/clinica.jpg" alt="" srcset="">
+        <h3 class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's standard</h3>
+      </div>
+
+    </div>
   </div>
 
 
@@ -107,10 +111,30 @@
     </div>
   </footer>
 
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
   <script>
+    $(document).ready(function () {
+      $('.multiple-itens').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false,
+        dots: true,
+        responsive: [{
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+
+        ]
+      });
+    });
+
     function showLinks() {
       let links = document.querySelector(".nav-links")
       if (links.style.display === "flex") {
@@ -119,9 +143,6 @@
         links.style.display = "flex"
       }
     }
-
-
-    $('.single-item').slick();
   </script>
 </body>
 

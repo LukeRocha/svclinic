@@ -262,3 +262,7 @@ footer h2 {
   border-top: 3px solid #3498db;
   border-bottom: 3px solid #3498db;
 }
+
+.carousel-item img{
+  width: 80vw;
+}
