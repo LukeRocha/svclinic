@@ -11,9 +11,10 @@ a {
   text-decoration: none;
 }
 
-i {
+button {
   color: #7ac6da;
   border-radius: 8px;
+  border: none;
 }
 
 .container {
@@ -35,15 +36,18 @@ i {
   height: 16vh;
 }
 
-.topnav a {
-  float: left;
+.top-nav a {
   display: block;
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
+
+.desktop-header {
+  display: none;
+}
+
 
 .active {
   background: #4e4747;
@@ -51,7 +55,7 @@ i {
 
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
   background-color: #1c375c;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -73,13 +77,8 @@ i {
   overflow: hidden;
 }
 
-.dropdown-content a {
-  color: black;
-}
-
-.topnav a:hover,
+.top-nav a:hover,
 .dropdown:hover .dropdown-button {
-  background-color: #555;
   color: white;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -110,11 +109,18 @@ i {
   box-shadow: 0 8px 6px -6px black;
 }
 
+.desktop-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
 /* adicionar media query */
 .nav-links {
   display: none;
   flex-flow: column wrap;
   background: #398ebc;
+  width: 100vw;
 }
 
 .nav-links a {
@@ -242,10 +248,31 @@ footer h2 {
 
 
 
+@media only screen and (min-width: 640px) {
 
+  .top-nav {
+    display: none;
+  }
 
+  .desktop-header {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0 auto;
+    text-decoration: none;
+  }
 
+  .desktop-header img {
+    width: 20vw;
+    height: 20vh;
+    margin: 0 auto;
+  }
 
+  .dropdown-content {
+    color: white;
+  }
+
+}
 
 
 
