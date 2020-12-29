@@ -16,21 +16,30 @@
 
 
   <div class="desktop-header">
-    <a href="#home">
-      <img src="/resources/img/svlogo.jpg" class="container desktop-logo" alt="" srcset="">
-    </a>
+    <div id="x" class="logo-div container">
+      <a href="#home" class="container logo-container">
+        <img src="/resources/img/svlogo.jpg" class="container desktop-logo" alt="" srcset="">
+      </a>
+      <div class="intro-contact container">
+        <h2 class="container">Tire suas dúvidas <br> Fale conosco</h2>
+        <div class="container">
+          <a class="container" href="https://api.whatsapp.com/send?phone=+5513974050881" target="_blank">(13) 09870970
+            ✆</a>
+          </div>
+    </div>
+    </div>
     <div class="container">
-      <a class="container" href="/index.html">Home</a>
+      <a class="container">Home</a>
       <div class="dropdown">
-        <a class="container dropdown-buttonn" href="#">
+        <a class="container dropdown-button" href="#">
           Atendimentos
           <i class="fa fa-caret-down"></i>
         </a>
         <div class="dropdown-content">
-          <a href="#" class="container">Ortodontia</a>
-          <a href="#" class="container">Periodontia</a>
-          <a href="#" class="container">Implantodontia</a>
-          <a href="#" class="container">Clinica geral</a>
+          <a href="#" class="container desktop-nav-items">Ortodontia</a>
+          <a href="#" class="container desktop-nav-items">Periodontia</a>
+          <a href="#" class="container desktop-nav-items">Implantodontia</a>
+          <a href="#" class="container desktop-nav-items">Clinica geral</a>
         </div>
       </div>
       <a class="container" href="#">Localizaçao</a>
@@ -69,10 +78,15 @@
 
 
   <div class="presentation">
-    <img class="container" src="/resources/img/dente.jpg" alt="">
-    <h2>Sobre nós</h2>
-    <h3 class="container">Nós, da SV Odonto, prestamos o melhor atendimento, agimos de acordo com as normas padronizadas
-      pelo conselho de odontologia, e temos o compromisso com o melhor atendimento que voce pode encontrar.</h3>
+    <div class="container">
+      <img class="container" src="/resources/img/dente.jpg" alt="">
+    </div>
+    <div class="container">
+      <h2>Sobre nós</h2>
+      <h3 class="container">Nós, da SV Odonto, prestamos o melhor atendimento, agimos de acordo com as normas
+        padronizadas
+        pelo conselho de odontologia, e temos o compromisso com o melhor atendimento que voce pode encontrar.</h3>
+    </div>
   </div>
 
 
@@ -151,15 +165,15 @@
     }
 
 
-//     $(window).on('resize', function() {
-//       var win = $(this);
-//       if (win.width() > 699) {
-//         $(".dropdown").addClass('.desktop-menu');
-//         $(".sup-container").removeClass('.fa')
-//         $(".sup-container").removeClass('.fa-bars')
-//       // }else{
+    //     $(window).on('resize', function() {
+    //       var win = $(this);
+    //       if (win.width() > 699) {
+    //         $(".dropdown").addClass('.desktop-menu');
+    //         $(".sup-container").removeClass('.fa')
+    //         $(".sup-container").removeClass('.fa-bars')
+    //       // }else{
 
-// });
+    // });
 
 
     // esta funcao sera usada quando a versao desktop for desenvolvida
