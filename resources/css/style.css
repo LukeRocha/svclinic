@@ -247,6 +247,9 @@ footer h2 {
 }
 
 
+
+
+
 @media only screen and (min-width: 640px) {
   .top-nav {
     display: none;
@@ -269,12 +272,35 @@ footer h2 {
 
   .logo-div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row nowrap;
     align-self: center;
     align-items: center;
     width: 90%;
     border-bottom: 1px solid #1c375c;
+  }
+
+  .header-contact {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #3498db;
+    text-align: center;
+  }
+
+  .header-contact a {
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    background: #7ac6da;
+  }
+
+  .header-contact a:hover {
+    color:#3498db;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   .desktop-header a {
@@ -317,6 +343,7 @@ footer h2 {
   .desktop-header a:hover,
   .dropdown:hover .dropdown-button {
     color: #1c375c;
+    border: none;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -347,9 +374,6 @@ footer h2 {
   }
 
 }
-
-
-
 
 
 
