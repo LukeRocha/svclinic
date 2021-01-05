@@ -171,8 +171,12 @@ button {
   width: 60vw;
   margin: 0 auto;
   background: #3498db;
-  color: white;
   border-radius: 16px;
+}
+
+.next-page a{
+  color: white;
+  padding: 10px;
 }
 
 .care ul {
@@ -265,8 +269,8 @@ footer h2 {
   }
 
   .desktop-header img {
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
     margin: 0 auto;
   }
 
@@ -277,6 +281,7 @@ footer h2 {
     align-self: center;
     align-items: center;
     width: 90%;
+    position: relative;
     border-bottom: 1px solid #1c375c;
   }
 
@@ -366,12 +371,42 @@ footer h2 {
   .presentation {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-around;
   }
 
   .presentation img {
     width: 60%;
     height: 60%;
+    padding: 30px;
+    border-radius: 20%;
   }
+
+  .presentation-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .care {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .next-page {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: white;
+  }
+  .next-page a{
+    color: white;
+  }
+
+
+
+
 
 }
 
