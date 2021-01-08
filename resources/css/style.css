@@ -174,7 +174,7 @@ button {
   border-radius: 16px;
 }
 
-.next-page a{
+.next-page a {
   color: white;
   padding: 10px;
 }
@@ -280,7 +280,7 @@ footer h2 {
     flex-flow: row nowrap;
     align-self: center;
     align-items: center;
-    width: 90%;
+    width: 90vw;
     position: relative;
     border-bottom: 1px solid #1c375c;
   }
@@ -301,7 +301,7 @@ footer h2 {
   }
 
   .header-contact a:hover {
-    color:#3498db;
+    color: #3498db;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -372,6 +372,7 @@ footer h2 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    background-size: 98vw;
   }
 
   .presentation img {
@@ -387,11 +388,17 @@ footer h2 {
     align-items: flex-start;
   }
 
+  .presentation {
+    background-position: center;
+    background-repeat: space;
+  }
+
   .care {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 98vw;
   }
 
   .next-page {
@@ -400,13 +407,19 @@ footer h2 {
     align-self: center;
     color: white;
   }
-  .next-page a{
+
+  .next-page a {
     color: white;
   }
 
-
-
-
+  .contact-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    width: 100vw;
+  }
 
 }
 
