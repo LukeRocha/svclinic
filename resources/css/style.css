@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -26,7 +29,7 @@ button {
   justify-content: space-between;
   color: black;
   align-items: center;
-  width: 100vw;
+  width: 98vw;
   flex-flow: column wrap;
 }
 
@@ -46,7 +49,6 @@ button {
 .desktop-header {
   display: none;
 }
-
 
 .active {
   background: #4e4747;
@@ -242,6 +244,10 @@ footer h2 {
   border-bottom: white solid 1px;
 }
 
+.site-map a{
+  text-decoration: none;
+  color: white;
+  }
 
 @media only screen and (min-width: 640px) {
   body {
@@ -271,6 +277,15 @@ footer h2 {
     background: #398ebc;
     color: white;
     width: 18vw;
+  }
+
+  .desktop-nav a:hover  {
+    color: #3498db !important;
+    border-bottom: 1px solid #398ebc !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .logo-div {
@@ -457,6 +472,7 @@ footer h2 {
   .footer-column h2 {
     font-size: 1.8em;
   }
+
 
 
 }

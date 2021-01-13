@@ -13,11 +13,11 @@
 </head>
 
 <body>
-
+  <div  id="home"></div>
   <div class="desktop-header container">
     <div id="x" class="logo-div container">
       <a href="#home" class="container logo-container">
-        <img src="/resources/img/svlogo.jpg" class="container desktop-logo" alt="" srcset="">
+        <img href="#home" src="/resources/img/svlogo.jpg" class="container desktop-logo" alt="" srcset="">
       </a>
       <div class="header-contact container">
         <h2 class="container">Tire suas dúvidas</h2>
@@ -26,24 +26,24 @@
         </a>
       </div>
     </div>
-    <div class="container">
-      <a class="container">Home</a>
+    <div class="container desktop-nav">
+      <!-- <a class="container" href="#home">Home</a> -->
       <div class="dropdown">
-        <a class="container dropdown-button" href="#">
+        <a class="container dropdown-button" href="#care">
           Atendimentos
-          <i class="fa fa-caret-down"></i>
+          <!-- <i class="fa fa-caret-down"></i> -->
         </a>
-        <div class="dropdown-content">
+        <!-- <div class="dropdown-content">
           <a href="#" class="container desktop-nav-items">Ortodontia</a>
           <a href="#" class="container desktop-nav-items">Periodontia</a>
           <a href="#" class="container desktop-nav-items">Implantodontia</a>
           <a href="#" class="container desktop-nav-items">Clinica geral</a>
-        </div>
+        </div> -->
       </div>
-      <a class="container" href="#">Localizaçao</a>
-      <a class="container" href="#">Contato</a></div>
+      <a class="container" href="#contact">Contato</a>
+      <a class="container" href="#map">Localizaçao</a>
     </div>
-  </div>
+    </div>
 
   <div class="top-nav">
     <div class="sup-container">
@@ -51,24 +51,24 @@
         <img src="/resources/img/svlogo.jpg" class="container" alt="" srcset="">
       </a>
       <a href="javascript:void(0)" class="desktop-menu menu-bars container">
-        <button class="fa fa-bars container" style="font-size:40px" onclick="showLinks()"></button>
+        <button class="fa fa-bars" style="font-size:40px" onclick="showLinks()"></button>
       </a>
       <div class="nav-links container">
         <a class="container active" href="/index.html">Home</a>
         <div class="dropdown">
-          <a class="container dropdown-button" href="#">
+          <a class="dropdown-button" href="#">
             Atendimentos
-            <i class="fa fa-caret-down"></i>
+            <!-- <i class="fa fa-caret-down"></i> -->
           </a>
-          <div class="dropdown-content">
+          <!-- <div class="dropdown-content">
             <a href="#">Ortodontia</a>
             <a href="#">Periodontia</a>
             <a href="#">Implantodontia</a>
             <a href="#">Clinica geral</a>
-          </div>
+          </div> -->
         </div>
-        <a class="container" href="#">Localizaçao</a>
-        <a class="container" href="#">Fale conosco</a>
+        <a class="container" href="#contact">Fale conosco</a>
+        <a class="container" href="#map">Localizaçao</a>
       </div>
     </div>
   </div>
@@ -78,13 +78,14 @@
       <img class="container" src="/resources/img/dente.jpg" alt="">
     </div>
     <div class="presentation-text container">
-      <h2 class="container">Sobre nós</h2>
+      <h3 class="container" style="font-size:30px">Sobre nós</h3>
       <h3 class="container">Nós, da SV Odonto, prestamos o melhor atendimento, agimos de acordo com as normas
         padronizadas
         pelo conselho de odontologia, e temos o compromisso com o melhor atendimento que voce pode encontrar.</h3>
     </div>
   </div>
-
+<div id="care"></div>
+<div id="contact"></div>
   <div class="desktop-care">
 
     <div class="care container">
@@ -115,6 +116,7 @@
     </div>
   </div>
 
+  <div id="map"></div>
   <div class="map container">
     <h3 class="container">Estamos em Sao Vicente, na rua thurosbango turosbago, nº 123!</h3>
   </div>
@@ -152,9 +154,10 @@
       <div class="footer-column container site-map">
         <div class="container">
         <h2>Mapa</h2>
-        <h3>Home</h3>
-        <h3>Fale</h3>
-        <h3>Contato</h3>
+        <h3><a href="#home">Home</a></h3>
+        <h3> <a href="#contact">Contato</a></h3>
+        <h3><a href="#care">Atendimentos</a></h3>
+        <h3><a href="#map">Localizaçao</a></h3>
       </div>
       </div>
     </div>
