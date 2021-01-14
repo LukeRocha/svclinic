@@ -451,6 +451,7 @@ footer h2 {
     text-align: center;
   }
 
+
   .desktop-footer {
     display: flex;
     flex-flow: row nowrap;
@@ -473,6 +474,24 @@ footer h2 {
     font-size: 1.8em;
   }
 
+  .carousel-item {
+    max-width: 33vw;
+    width: 30vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+  }
+
+
+  .carousel-content img {
+    max-width: 20vw;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .carousel-content h3 {
+    width: 25vw;
+  }
 
 
 }
