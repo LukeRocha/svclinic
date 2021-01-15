@@ -5,6 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html,body{
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -29,7 +33,7 @@ button {
   justify-content: space-between;
   color: black;
   align-items: center;
-  width: 98vw;
+  width: 100vw;
   flex-flow: column wrap;
 }
 
@@ -207,7 +211,7 @@ button {
   color: #1c375c;
   font-size: 1.8em;
   text-align: center;
-  width: 98vw;
+  width: 100vw;
 }
 
 footer {
@@ -231,6 +235,7 @@ footer h2 {
   margin: 0 auto;
   width: 40vw;
   height: 20vh;
+  border-radius: 28px;
 }
 
 .bottom-footer {
@@ -474,6 +479,8 @@ footer h2 {
     font-size: 1.8em;
   }
 
+
+  /* Caroulsel design */
   .carousel-item {
     max-width: 33vw;
     width: 30vw;
@@ -505,12 +512,8 @@ footer h2 {
   color: white;
 }
 
-.care-index h2 {
+.care-index h1 {
   color: #3498db
-}
-
-.top-nav {
-  background: white;
 }
 
 .carousel {
