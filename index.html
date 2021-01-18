@@ -39,17 +39,13 @@
         <img src="/resources/img/svlogo.jpg" class="container" alt="" srcset="">
       </a>
       <a href="javascript:void(0)" class="desktop-menu menu-bars container">
-        <button class="fa fa-bars" style="font-size:40px" onclick="showLinks()"></button>
+        <button class="fa fa-bars trigger dropdown" onclick="showLinks()" style="font-size:40px"></button>
       </a>
-      <div class="nav-links container">
-        <a class="container active" href="/index.html">Home</a>
-        <div class="dropdown">
-          <a class="dropdown-button" href="#">
-            Atendimentos
-          </a>
-        </div>
-        <a class="container" href="#contact">Fale conosco</a>
-        <a class="container" href="#map">Localizaçao</a>
+      <div class="nav-links list container">
+        <a class="container active list" href="/index.html">Home</a>
+        <a class="dropdown-button list" href="#care">Atendimentos</a>
+        <a class="container list" href="#contact">Fale conosco</a>
+        <a class="container list" href="#map">Localizaçao</a>
       </div>
     </div>
   </div>
@@ -87,8 +83,8 @@
     <div style="background: #4e4747;" class="contact-area container">
       <div class="container">
         <h1 class="container">Agende uma avaliaçao conosco</h1>
-         <div style="background: #77b255" class="container call-us">
-          <a class="container" href="https://api.whatsapp.com/send?phone=+5513974050881" target="_blank" >whatsapp</a>
+        <div style="background: #77b255" class="container call-us">
+          <a class="container" href="https://api.whatsapp.com/send?phone=+5513974050881" target="_blank">whatsapp</a>
         </div>
         <h3 class="container">contato@odontosv.com</h3>
         <h3 class="container">Atendemos de segunda a sexta <br> das 09:00 ás 19:00</h3>
@@ -96,15 +92,15 @@
     </div>
   </div>
 
-  <div  id="map" class="map container">
+  <div id="map" class="map container">
     <h3 class="container">Estamos em Sao Vicente, no edificio Helbor</h3>
   </div>
   <div>
     <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.3589187947027!2d-46.32204203530973!3d-23.9477450818586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce039eb070c3d5%3A0x9400d3dd4983c451!2sR.%20Campos%20Melo%2C%20157%20-%20Vila%20Matias%2C%20Santos%20-%20SP%2C%2011015-150!5e0!3m2!1spt-BR!2sbr!4v1600780410961!5m2!1spt-BR!2sbr"
-    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-  </iframe>
-</div>
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.3589187947027!2d-46.32204203530973!3d-23.9477450818586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce039eb070c3d5%3A0x9400d3dd4983c451!2sR.%20Campos%20Melo%2C%20157%20-%20Vila%20Matias%2C%20Santos%20-%20SP%2C%2011015-150!5e0!3m2!1spt-BR!2sbr!4v1600780410961!5m2!1spt-BR!2sbr"
+      width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+  </div>
 
   <footer>
     <div class="desktop-footer container">
@@ -152,12 +148,10 @@
   <script>
     function showLinks() {
       let links = document.querySelector(".nav-links")
-      if (links.style.display === "flex") {
-        links.style.display = "none"
-      } else {
-        links.style.display = "flex"
+      $(links).slideToggle(200, "linear");
+      links.style = "display: flex"
       }
-    }
+
   </script>
 </body>
 
