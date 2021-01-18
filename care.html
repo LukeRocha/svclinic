@@ -178,12 +178,9 @@
 
     function showLinks() {
       let links = document.querySelector(".nav-links")
-      if (links.style.display === "flex") {
-        links.style.display = "none"
-      } else {
-        links.style.display = "flex"
+      $(links).slideToggle(120, "linear");
+      links.style = "display: flex"
       }
-    }
   </script>
 </body>
 
