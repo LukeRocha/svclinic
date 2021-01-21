@@ -500,6 +500,13 @@ footer h2 {
     width: 25vw;
   }
 
+  .intro-care {
+    background: #1c375c !important;
+    color: white !important;
+    /* float: left; */
+    /* Guardar atributos, para teste de design */
+    text-align: left;
+  }
 
 }
 
@@ -512,6 +519,10 @@ footer h2 {
   color: white;
 }
 
+.intro-care {
+  color: #1c375c;
+  text-align: center;
+}
 .care-index h1 {
   color: #3498db
 }
