@@ -535,3 +535,20 @@ footer h2 {
 .carousel-item img {
   width: 80vw;
 }
+
+
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.conteiner {
+  margin: 20px 10px;
+}
+
+.header-conteiner {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
