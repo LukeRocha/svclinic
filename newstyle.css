@@ -12,6 +12,9 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .container {
   padding: 10px;
 }
@@ -25,6 +28,9 @@ a {
   padding: 12px;
 }
 
+.active {
+  background: #4e4747;
+}
 .mobile-header {
   display: flex;
   flex-direction: column;
@@ -71,7 +77,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   background: #1c375c;
   color: white;
 
@@ -101,7 +107,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   background: #4e4747;
   color: white;
 }
@@ -116,4 +122,36 @@ a {
   color: white;
   /* background: #398ebc; */
   margin-bottom: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: #4e4747;
+  color: white;
+}
+
+.footer img {
+  border-radius: 8px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-column h1 {
+  color: lightblue;
+}
+
+.bottom-footer {
+  color: white;
+  background: #1c375c;
+  text-align: center;
 }

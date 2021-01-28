@@ -4,178 +4,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sv Odonto</title>
+  <title>Odonto Sv</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/resources/css/style.css">
+  <link rel="stylesheet" href="/newstyle.css">
   <link rel="icon" href="/resources/img/svico2.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div id="home"></div>
-  <div class="desktop-header container">
-    <div id="x" class="logo-div container">
-      <a href="#home" class="container logo-container">
-        <img href="#home" src="/resources/img/svlogo.jpg" class="container desktop-logo" alt="" srcset="">
+  <div class="mobile-header">
+    <div class="sup-header container">
+      <div class="header-img">
+        <a href="#home">
+          <img src="/resources/img/svlogo.jpg" style="width: 100px; height: 80px;" alt="" srcset="">
+        </a>
+      </div>
+      <div class="mobile-menu"></div>
+      <a href="javascript:void(0)" class="desktop-menu menu-bars">
+        <button class="fa fa-bars trigger dropdown" onclick="showLinks()" style="font-size:40px"></button>
       </a>
-      <div class="header-contact container">
+    </div>
+    <div class="nav-links container">
+      <a class="active" href="/newindex.html">Home</a>
+      <a href="#clinical">Atendimentos</a>
+      <a href="#contact">Fale conosco</a>
+      <a href="#map">Localizaçao</a>
+    </div>
+  </div>
+  <!-- <div class="desktop-header">
+    <div>
+      <img src="/resources/img/svlogo.jpg" style="width: 100px; height: 80px;" alt="" srcset="">
+      <div>
+        <h1>Fale conosco</h1>
+        <a href="" class="button">Whatsapp</a>
         <h2 class="container">Tire suas dúvidas</h2>
         <a class="container desktop-buttons" href="https://api.whatsapp.com/send?phone=+5513996128986" target="_blank">
           Fale conosco✆
-        </a> <a class="container active list" href="/index.html">Home</a>
-        <a class="dropdown-button list" href="#care">Atendimentos</a>
-        <a class="container list" href="#contact">Fale conosco</a>
-        <a class="container list" href="#map">Localizaçao</a>
+        </a>
       </div>
     </div>
-    <div class="container desktop-nav">
+    <div>
       <a class="container dropdown-button" href="/care.html">Atendimentos</a>
       <a class="container" href="#contact">Contato</a>
       <a class="container" href="#map">Localizaçao</a>
     </div>
-  </div>
-
-  <!-- <div class="top-nav">
-    <div class="sup-container">
-      <a href="#home">
-        <img src="/resources/img/svlogo.jpg" class="container" alt="" srcset="">
-      </a>
-      <a href="javascript:void(0)" class="desktop-menu menu-bars container">
-        <button class="fa fa-bars trigger dropdown" onclick="showLinks()" style="font-size:40px"></button>
-      </a>
-      <div class="nav-links list container">
-        <a class="container active list" href="/index.html">Home</a>
-        <a class="dropdown-button list" href="#care">Atendimentos</a>
-        <a class="container list" href="#contact">Fale conosco</a>
-        <a class="container list" href="#map">Localizaçao</a>
-      </div>
-    </div>
   </div> -->
-
-  <div class="conteiner header-conteiner">
-  <div class="header">
-    <div>
-      <a href="#home">
-        <img src="/resources/img/svlogo.jpg" style="width: 100px; height: 80px;" alt="" srcset="">
-      </a>
-    </div>
-    <div>
-      <a href="javascript:void(0)" class="desktop-menu menu-bars">
-        <button class="fa fa-bars trigger dropdown" onclick="showLinks()" style="font-size:40px"></button>
-      </a>
-      <div class="nav-links list container">
-        <a class="container active list" href="/index.html">Home</a>
-        <a class="dropdown-button list" href="#care">Atendimentos</a>
-        <a class="container list" href="#contact">Fale conosco</a>
-        <a class="container list" href="#map">Localizaçao</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <div class="presentation">
-    <div>
-      <img class="container" src="/resources/img/dente.jpg" alt="">
-    </div>
-    <div class="presentation-text container">
-      <h3 class="container" style="font-size:30px">Sobre nós</h3>
-      <h3 class="container">Nós, da SV Odonto, prestamos o melhor atendimento, agimos de acordo com as normas
-        padronizadas
-        pelo conselho de odontologia, e temos o compromisso com o melhor atendimento que voce pode encontrar.</h3>
-    </div>
-  </div>
-  <div id="care"></div>
-  <div id="contact"></div>
-  <div class="desktop-care">
-
-    <div class="care container">
-      <div class="container">
-        <h1 class="container">Nossas especialidades</h1>
-        <ul class="container">
-          <li>Ortodontia ✔</li>
-          <li>Periodontia ✔</li>
-          <li>Implantodontia ✔</li>
-          <li>Clinica geral ✔</li>
-        </ul>
-      </div>
-      <div class="container next-page">
-        <a href="/care.html" class="container">Saiba mais</a>
-      </div>
-    </div>
-
-    <div style="background: #4e4747;" class="contact-area container">
-      <div class="container">
-        <h1 class="container">Agende uma avaliaçao conosco</h1>
-        <h3 class="container">contato@odontosv.com</h3>
-        <h3 class="container">Atendemos de segunda a sexta <br> das 09:00 ás 19:00</h3>
-        <div style="background: #77b255" class="container call-us">
-          <a class="container" href="https://api.whatsapp.com/send?phone=+5513974050881" target="_blank">whatsapp</a>
-        </div>
-      </div>
-    </div>
+  <div class="presentation container">
+    <img src="/resources/img/dente.jpg" alt="">
+    <h2>Sobre nós</h2>
+    <h3>Nós, da SV Odonto, prestamos o melhor atendimento, agimos de acordo com as normas
+      padronizadas
+      pelo conselho de odontologia, e temos o compromisso com o melhor atendimento que voce pode encontrar.</h3>
   </div>
 
-  <div id="map" class="map container">
-    <h3 class="container">Estamos em Sao Vicente, no edificio Helbor</h3>
+  <div id="clinical" class="clinical container">
+    <h1>Nossas especialidades</h1>
+    <ul style="top: 0;">
+      <li>Ortodontia ✔</li>
+      <li>Periodontia ✔</li>
+      <li>Implantodontia ✔</li>
+      <li>Clinica geral ✔</li>
+    </ul>
+    <a href="/care.html" class="button container">Saiba mais</a>
   </div>
-  <div>
+
+  <div id="contact" class="contact container">
+    <h1>Fale conosco</h1>
+    <h2>Atendemos de segunda a sexta:<br>das 09:00 às 19:00</h2>
+    <h2>contato@svodonto.com.br</h2>
+    <a class="container" href="https://api.whatsapp.com/send?phone=+5513974050881" target="_blank"><img width="80px"
+        height="80px" src="https://img.icons8.com/fluent/48/000000/whatsapp.png" /></a>
+  </div>
+  <div id="map">
+    <h2 class="container" style="text-align: center; color: #4e4747;">Estamos localizados em Sao Vicente, no edifício
+      Helbor</h2>
+
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.3589187947027!2d-46.32204203530973!3d-23.9477450818586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce039eb070c3d5%3A0x9400d3dd4983c451!2sR.%20Campos%20Melo%2C%20157%20-%20Vila%20Matias%2C%20Santos%20-%20SP%2C%2011015-150!5e0!3m2!1spt-BR!2sbr!4v1600780410961!5m2!1spt-BR!2sbr"
       width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
     </iframe>
   </div>
+  <footer class="footer">
+    <div class="container">
 
-  <footer>
-    <div class="desktop-footer container">
-      <div class="footer-column container">
-        <div class="container">
-          <img src="/resources/img/svlogo.jpg" class="container" alt="" srcset="">
-          <h2>Sv Odonto</h2>
-          <h3>Atendemos com ética e boa implementaçao, para trazer ao paciente confiança e comodidade em
-            seu tratamento</h3>
-        </div>
-
-        <div class="container">
-          <h2>Fale conosco:</h2>
-          <h3>(13) 09870970 Whatsapp</h3>
-          <h3>contato@svclinic.com</h3>
-        </div>
+      <div class="footer-column">
+        <img src="/resources/img/svlogo.jpg" height="120px" width="120px" alt="" srcset="">
+        <h1>Sv Odonto</h1>
+        <h2>Atendemos com ética e boa implementaçao, para trazer ao paciente confiança e comodidade em
+          seu tratamento</h2>
       </div>
 
-      <div class="footer-column container">
-        <div class="container">
-          <h2>Horário de atendimento:</h2>
-          <h3>De segunda a sexta: <br>das 09:00 às 19:00</h3>
-          <h3>Sabados e feriados: <br>das 09:00 às 16:00</h3>
-        </div>
+      <div class="footer-column">
+        <h1>Fale conosco:</h1>
+        <h2>(13) 09870970 Whatsapp</h2>
+        <h2>contato@svclinic.com</h2>
+        <h1></h1>
       </div>
 
-      <div class="footer-column container site-map">
-        <div class="container">
-          <h2>Mapa</h2>
-          <h3><a href="#home">Home</a></h3>
-          <h3> <a href="#contact">Contato</a></h3>
-          <h3><a href="#care">Atendimentos</a></h3>
-          <h3><a href="#map">Localizaçao</a></h3>
-        </div>
+      <div class="footer-column">
+        <h1>Horário de atendimento:</h1>
+        <h2>De segunda a sexta: <br>das 09:00 às 19:00</h2>
+        <h2>Sabados e feriados: <br>das 09:00 às 16:00</h2>
       </div>
+
+      <div class="footer-column">
+        <h1>Mapa</h1>
+        <h2><a href="/index.html">Home</a></h2>
+        <h2><a href="/care.html">Atendimentos</a></h2>
+        <h2><a href="#contact">Contato</a></h2>
+        <h2><a href="#map">Localizaçao</a></h2>
+      </div>
+
     </div>
-
-    <div class="bottom-footer container">
+    <div class="bottom-footer">
       <p>©Odonto SV 2020 - todos os direitos reservados</p>
     </div>
   </footer>
-
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script>
     function showLinks() {
       let links = document.querySelector(".nav-links")
-      $(links).slideToggle(120, "linear");
+      $(links).slideToggle(100, "linear");
       links.style = "display: flex"
-      }
-
+    }
   </script>
 </body>
 
