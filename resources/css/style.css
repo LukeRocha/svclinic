@@ -73,11 +73,13 @@ html,body{
 }
 
 .presentation {
+  color: #4e4747;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: url(/resources/img/clinic.jpg);
-  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
 }
 
 .presentation img {
@@ -97,11 +99,6 @@ html,body{
   color: white;
 }
 
-.clinical h1 {
-  top: 0;
-  margin-top: 0;
-}
-
 .clinical ul {
   list-style: none;
   display: flex;
@@ -110,10 +107,8 @@ html,body{
 }
 
 .clinical a {
-  margin-bottom: 15px;
   color: white;
   background: #398ebc;
-  margin-bottom: 0;
 }
 
 .contact {
@@ -126,26 +121,22 @@ html,body{
   color: white;
 }
 
-.contact h1 {
-  top: 0;
-  margin-top: 0;
+footer {
+  background: #4e4747;
 }
 
-.contact a {
-  margin-bottom: 15px;
-  color: white;
-  margin-bottom: 0;
-}
 
 .footer {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   background: #4e4747;
   color: white;
+  justify-content: space-between;
 }
 
-.footer img {
-  border-radius: 8px;
+.media-footer {
+  display: none;
 }
 
 .footer a {
@@ -156,7 +147,7 @@ html,body{
 .footer-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .footer-column h1 {
@@ -205,7 +196,6 @@ html,body{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    /* width: 50vw; */
   }
 
   .medias img {
@@ -237,6 +227,14 @@ html,body{
     transition: all 0.2s ease-in-out;
   }
 
+  .presentation {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding:32px;
+  }
+  .presentation-desktop {
+    max-width: 60vw;
+  }
   .desktop-align {
     display: flex;
     flex-direction: row;
@@ -248,25 +246,51 @@ html,body{
 
   .clinical {
     width: 50vw;
-
   }
 
   .clinical a {
     width: 500px;
   }
 
+  .clinical a:hover {
+    background: #22658a;
+    border-bottom: #398ebc 1px solid;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
   .contact {
-    width: 50%;
+    width: 50vw;
   }
 
+  .footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
   }
 
+  .footer-column {
+    width: 20%;
+  }
+  .media-footer {
+    display: flex;
+    flex-direction: row;
 
+  }
+  .media-footer img {
+    width: 35px;
+    height: 35px;
+    margin-left: 35px;
+  }
 
-
-
-
-
+  .desktop-footer-media {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  }
 
 
 contact-header {
